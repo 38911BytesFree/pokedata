@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": 1794885788,
+  "revision": 1794886395,
   "dataVersion": "pvpoke-2026-11-09 18:40:51",
   "file": "game_data.json",
   "size": 2020551,
-  "sha256": "20cee7c81de694ea4fdcc6ebb8480c5bfdf2178135eb84071ed775f7c05c70b6",
-  "signature": "DK6WjmWTWF4N3AdIQjQw8xwPSdnEvU5Wala91HKvgA4OxoJy18nh+HZMG4yUtEGeAIiHowJgxC48wcB+6UD1Dg=="
+  "sha256": "47d017f37ed3018398e864446ee0d211460258e3dae529cdea14fdd0445b0d5d",
+  "signature": "MUGkVayGpVcldJMFdDrATyySN02HQWxt51X+cOXZsWUHEVW1V1QL2WiREl4wUpB0kHt5/q6CXMvUVEAOgEbsCA=="
 }
