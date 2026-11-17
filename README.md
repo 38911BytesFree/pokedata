@@ -7,13 +7,13 @@ These files are generated and signed by PokeMagic's data pipeline, so don't edit
 ## Layout
 
 - `v1/manifest.json`: the current revision, with the bundle's size, SHA-256 hash and Ed25519 signature.
-- `v1/game_data.json`: species, moves, CP multipliers, power-up costs, the type chart and league rankings.
+- `v1/game_data.json`: species, moves, CP multipliers, power-up costs, the type chart, the league rankings with the moves PvPoke's battles use for each Pokémon, and the cups PvPoke currently ranks.
 
 The folder number is the data schema version. An app reads only the schema it was built for, so a format change goes in a new folder and older apps keep working on `v1`.
 
 ## Sources
 
-- Most of the data comes from [PvPoke](https://github.com/pvpoke/pvpoke), used under the MIT License (see `third_party/pvpoke/LICENSE`). That includes species, moves, CP multipliers, the type chart and the league rankings, which come from PvPoke's battle simulations.
+- Most of the data comes from [PvPoke](https://github.com/pvpoke/pvpoke), used under the MIT License (see `third_party/pvpoke/LICENSE`). That includes species, moves, CP multipliers, the type chart, and the league and cup rankings, which come from PvPoke's battle simulations.
 - Power-up costs are game mechanics compiled for PokeMagic and checked against in-game recordings.
 
 PokeMagic is unofficial and not affiliated with Niantic, Nintendo, Creatures or Game Freak.
