@@ -6,10 +6,11 @@ These files are generated and signed by PokeMagic's data pipeline, so don't edit
 
 ## Layout
 
-- `v1/manifest.json`: the current revision, with the bundle's size, SHA-256 hash and Ed25519 signature.
-- `v1/game_data.json`: species, moves, CP multipliers, power-up costs, the type chart, the league rankings with the moves PvPoke's battles use for each Pokémon, and the cups PvPoke currently ranks.
+- `v2/manifest.json`: the current revision, with the bundle's size, SHA-256 hash and Ed25519 signature.
+- `v2/game_data.json`: species, moves, CP multipliers, power-up costs, the type chart, the league rankings with the moves PvPoke's battles use for each Pokémon, and the cups: PvPoke's rankings where it has them, and each cup's rules (types, tags, bans, evolution stage, level cap) so the app can estimate the rest. Rankings are stored as compact rows that refer to species and moves by their place in those lists.
+- `v1/`: the same data in schema 1 for apps built before schema 2 (up to TestFlight build 2); it isn't updated any more.
 
-The folder number is the data schema version. An app reads only the schema it was built for, so a format change goes in a new folder and older apps keep working on `v1`.
+The folder number is the data schema version. An app reads only the schema it was built for, so a format change goes in a new folder and older apps keep working on the old one.
 
 ## Sources
 
